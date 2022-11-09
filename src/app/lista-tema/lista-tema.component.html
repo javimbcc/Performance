@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Temas</h1>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let tema of temas">
+      <a class="btn btn-secundary" routerLink="/detalle/{{ tema.tema }}"
+        >{{ tema.tema }} - {{ tema.titulo }}</a
+      >
+    </li>
+  </ul>
+</div>
